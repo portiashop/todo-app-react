@@ -1,0 +1,20 @@
+@use "../../styles/general/general";
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid general.$colors-outline;
+    padding: 5px 10px;
+    color: general.$colors-text;
+    .actions {
+      display: flex;
+      gap: 0.5em;
+    }
+  }
+}
