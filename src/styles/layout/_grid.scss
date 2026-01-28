@@ -1,12 +1,11 @@
-$container : 1200px;
+@use "../general/general";
 
 .container {
- margin-left:20%;
-  margin-right:20%;
-  max-width: $container;
-  width:60%;
+  margin: auto 20% ;
+  max-width: general.$variables-container;
+  width: 60%;
 }
-/* colum nastavi za layout če želiš dva z for zanko nastavit layout */
+
 .row {
   display: flex;
   min-height: 1px;
